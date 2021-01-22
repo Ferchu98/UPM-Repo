@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ProgressBar : MonoBehaviour
+public class ProgressBar1 : MonoBehaviour
 {
 
     private Slider slider;
@@ -24,16 +24,25 @@ public class ProgressBar : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (slider.value < targetProgress)
         {
             slider.value += fillSpeed * Time.deltaTime;
         }
+        if (slider.value > targetProgress)
+        {
+            slider.value -= fillSpeed * Time.deltaTime;
+        }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Keypad4))
         {
             Increment(0.1f);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Keypad1))
+        {
+            Substract(0.1f);
         }
     }
 
@@ -41,5 +50,11 @@ public class ProgressBar : MonoBehaviour
     {
         targetProgress = slider.value + valorInc;
     }
+
+    public void Substract(float valorSub)
+    {
+        targetProgress = slider.value - valorSub;
+    }
+
 
 }
