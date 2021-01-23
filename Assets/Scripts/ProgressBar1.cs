@@ -14,12 +14,21 @@ public class ProgressBar1 : MonoBehaviour
     public GameObject texto;
     public Text txt;
 
+    public ParticleSystem ps;
+
+    private bool mitad;
+    private bool tresC;
+
+
     private void Awake()
     {
         slider = gameObject.GetComponent<Slider>();
         
         //texto.SetActive(false);
         txt = texto.GetComponent<Text>();
+
+        mitad = false;
+        tresC = false;
     }
 
 
@@ -45,6 +54,10 @@ public class ProgressBar1 : MonoBehaviour
         {
             Increment(0.1f);
         }
+        if (Input.GetKeyDown(KeyCode.Keypad7))
+        {
+            Increment(0.05f);
+        }
 
         if (Input.GetKeyDown(KeyCode.Keypad1))
         {
@@ -52,6 +65,27 @@ public class ProgressBar1 : MonoBehaviour
         }
         txt.text = (Mathf.Round(slider.value * 100)).ToString();
 
+        if (slider.value >= 0.5 && !mitad)
+        {
+            ps.Play();
+            mitad = true;
+        }
+        
+        if (slider.value < 0.5 && mitad)
+        {
+            mitad = false;
+        }
+
+        if (slider.value >= 0.75 && !tresC)
+        {
+            ps.Play();
+            tresC = true;
+        }
+
+        if (slider.value < 0.75 && tresC)
+        {
+            tresC = false;
+        }
     }
 
     public void Increment (float valorInc)
@@ -64,12 +98,5 @@ public class ProgressBar1 : MonoBehaviour
         targetProgress = slider.value - valorSub;
     }
 
-
-    IEnumerator MostrarTexto()
-    {
-
-
-        yield return new WaitForSeconds(1.0f);
-    }
 
 }
