@@ -11,9 +11,15 @@ public class ProgressBar1 : MonoBehaviour
     public float fillSpeed = 0.5f;
     private float targetProgress = 0;
 
+    public GameObject texto;
+    public Text txt;
+
     private void Awake()
     {
         slider = gameObject.GetComponent<Slider>();
+        
+        //texto.SetActive(false);
+        txt = texto.GetComponent<Text>();
     }
 
 
@@ -44,6 +50,8 @@ public class ProgressBar1 : MonoBehaviour
         {
             Substract(0.1f);
         }
+        txt.text = (Mathf.Round(slider.value * 100)).ToString();
+
     }
 
     public void Increment (float valorInc)
@@ -56,5 +64,12 @@ public class ProgressBar1 : MonoBehaviour
         targetProgress = slider.value - valorSub;
     }
 
+
+    IEnumerator MostrarTexto()
+    {
+
+
+        yield return new WaitForSeconds(1.0f);
+    }
 
 }
