@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Prof1
   - Prof2
+  - Tarea1
   layers:
   - Default
   - TransparentFX

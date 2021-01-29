@@ -45,8 +45,8 @@ public class Tarea1_1 : MonoBehaviour
 
     IEnumerator Completion()
     {
-        barra.gameObject.GetComponent<ProgressBar1>().Increment(puntos);
-        yield return new WaitForSeconds(0.5f);
+        barra.gameObject.GetComponent<ProgressBar1>().Increment(puntos/100);
+        yield return new WaitForSeconds(2f);
         tarea1_1.SetActive(false);
         parent.SetActive(true);
     }
