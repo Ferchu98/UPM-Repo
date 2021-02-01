@@ -7,7 +7,6 @@ using UnityEngine.Events;
 public class Boton : MonoBehaviour
 {
 
-    public Button self;
 
     void Start()
     {
@@ -22,7 +21,7 @@ public class Boton : MonoBehaviour
 
     public void Onclick()
     {
-
+        gameObject.SetActive(false);
     }
 
 }

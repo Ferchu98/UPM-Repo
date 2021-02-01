@@ -23,6 +23,13 @@ public class ScriptMinijuego2 : MonoBehaviour
     public GameObject boton1;
     public GameObject boton2;
 
+    public GameObject botonJ1;
+    public GameObject botonJ2;
+    public GameObject botonJ3;
+    public GameObject botonJ4;
+    public GameObject botonJ5;
+    public GameObject botonJ6;
+
     public int comprobar;
 
 
@@ -91,6 +98,12 @@ public class ScriptMinijuego2 : MonoBehaviour
         else
         {
             Fallo();
+            botonJ1.gameObject.SetActive(true);
+            botonJ2.gameObject.SetActive(true);
+            botonJ3.gameObject.SetActive(true);
+            botonJ4.gameObject.SetActive(true);
+            botonJ5.gameObject.SetActive(true);
+            botonJ6.gameObject.SetActive(true);
             comprobar = 0;
         }
     }
