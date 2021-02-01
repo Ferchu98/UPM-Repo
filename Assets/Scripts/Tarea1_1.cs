@@ -11,14 +11,17 @@ public class Tarea1_1 : MonoBehaviour
 
     public GameObject tarea1_1;
 
+
     public GameObject barra;
-    public float puntos;
+
+    public bool completada;
 
     // Start is called before the first frame update
     void Start()
     {
         tarea1_1.SetActive(false);
         barra = GameObject.FindWithTag("Prof1");
+        completada = false;
     }
 
     // Update is called once per frame
@@ -28,8 +31,12 @@ public class Tarea1_1 : MonoBehaviour
     }
     public void Activar()
     {
-        tarea1_1.SetActive(true);
-        parent.SetActive(false);
+        if (!completada)
+        {
+            tarea1_1.SetActive(true);
+            parent.SetActive(false);
+
+        }
     }
     
     public void Desactivar()
@@ -38,16 +45,17 @@ public class Tarea1_1 : MonoBehaviour
         parent.SetActive(true);
     }
 
-    public void Completar()
+    public void Completar(int points)
     {
-        StartCoroutine(Completion());        
+        StartCoroutine(Completion(points));        
     }
 
-    IEnumerator Completion()
+    IEnumerator Completion(int puntos)
     {
         barra.gameObject.GetComponent<ProgressBar1>().Increment(puntos/100);
         yield return new WaitForSeconds(2f);
         tarea1_1.SetActive(false);
         parent.SetActive(true);
+        completada = true;
     }
 }

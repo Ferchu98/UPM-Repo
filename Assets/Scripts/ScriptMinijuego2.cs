@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
 
-public class ScriptMinijuego1 : MonoBehaviour
+public class ScriptMinijuego2 : MonoBehaviour
 {
 
     public Text texto;
@@ -23,12 +23,15 @@ public class ScriptMinijuego1 : MonoBehaviour
     public GameObject boton1;
     public GameObject boton2;
 
+    public int comprobar;
+
 
     void Awake()
     {
         currentText = 0;
         minijuego.SetActive(false);
         barra = GameObject.FindWithTag("Prof1");
+        comprobar = 0;
 
     }
 
@@ -48,7 +51,7 @@ public class ScriptMinijuego1 : MonoBehaviour
 
     public void Avanzar()
     {
-        if (currentText < (textos.Length -1))
+        if (currentText < (textos.Length - 1))
         {
             currentText++;
         }
@@ -69,14 +72,37 @@ public class ScriptMinijuego1 : MonoBehaviour
 
     public void Fallo()
     {
-        texto.text = "No creo que ese sea el material más adecuado.";
+        texto.text = "Hay objetos equivocados, inténtalo otra vez.";
         barra.gameObject.GetComponent<ProgressBar1>().Substract(puntosFallo / 100);
     }
 
     public void Acierto()
     {
-        texto.text = "Muchas gracias, ese es justo el material que estaba buscando.";
+        texto.text = "Muchas gracias, eso es todo lo que necesito.";
         tarea.Completar(puntosAcierto);
+    }
+
+    public void Comprobar()
+    {
+        if(comprobar == 3)
+        {
+            Acierto();
+        }
+        else
+        {
+            Fallo();
+            comprobar = 0;
+        }
+    }
+
+    public void ObjetoCorrecto()
+    {
+        comprobar++;
+    }
+
+    public void ObjetoIncorrecto()
+    {
+        comprobar--;
     }
 
 
