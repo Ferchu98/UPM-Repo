@@ -17,8 +17,8 @@ public class ScriptMinijuego1 : MonoBehaviour
     public bool empezar;
     public GameObject barra;
     public Tarea1_1 tarea;
-    public int puntosFallo;
-    public int puntosAcierto;
+    public float puntosFallo;
+    public float puntosAcierto;
 
     public GameObject boton1;
     public GameObject boton2;
@@ -70,12 +70,14 @@ public class ScriptMinijuego1 : MonoBehaviour
     public void Fallo()
     {
         texto.text = "No creo que ese sea el material más adecuado.";
+        Debug.Log(puntosFallo);
         barra.gameObject.GetComponent<ProgressBar1>().Substract(puntosFallo / 100);
     }
 
     public void Acierto()
     {
         texto.text = "Muchas gracias, ese es justo el material que estaba buscando.";
+        Debug.Log(puntosAcierto);
         tarea.Completar(puntosAcierto);
     }
 

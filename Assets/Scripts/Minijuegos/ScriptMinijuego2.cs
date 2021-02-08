@@ -17,8 +17,8 @@ public class ScriptMinijuego2 : MonoBehaviour
     public bool empezar;
     public GameObject barra;
     public Tarea1_1 tarea;
-    public int puntosFallo;
-    public int puntosAcierto;
+    public float puntosFallo;
+    public float puntosAcierto;
 
     public GameObject boton1;
     public GameObject boton2;

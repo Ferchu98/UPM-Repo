@@ -11,6 +11,8 @@ public class Tarea1_1 : MonoBehaviour
 
     public GameObject tarea1_1;
 
+    public int pointsDB;
+
 
     public GameObject barra;
 
@@ -45,12 +47,13 @@ public class Tarea1_1 : MonoBehaviour
         parent.SetActive(true);
     }
 
-    public void Completar(int points)
+    public void Completar(float points)
     {
-        StartCoroutine(Completion(points));        
+        StartCoroutine(Completion(points));
+        points = pointsDB;
     }
 
-    IEnumerator Completion(int puntos)
+    IEnumerator Completion(float puntos)
     {
         barra.gameObject.GetComponent<ProgressBar1>().Increment(puntos/100);
         yield return new WaitForSeconds(2f);
