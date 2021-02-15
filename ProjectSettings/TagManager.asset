@@ -8,6 +8,7 @@ TagManager:
   - Prof2
   - Tarea1
   - NotasManager
+  - Comprobar
   layers:
   - Default
   - TransparentFX

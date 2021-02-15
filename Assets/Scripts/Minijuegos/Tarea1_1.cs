@@ -37,7 +37,6 @@ public class Tarea1_1 : MonoBehaviour
         {
             tarea1_1.SetActive(true);
             parent.SetActive(false);
-
         }
     }
     

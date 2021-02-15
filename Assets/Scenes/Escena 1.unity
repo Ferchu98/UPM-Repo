@@ -7951,9 +7951,10 @@ GameObject:
   - component: {fileID: 807391234}
   - component: {fileID: 807391233}
   - component: {fileID: 807391235}
+  - component: {fileID: 807391236}
   m_Layer: 5
   m_Name: ComprobarFinal
-  m_TagString: Untagged
+  m_TagString: Comprobar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7975,7 +7976,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 80, y: 15.029999}
+  m_AnchoredPosition: {x: 80, y: 15.030029}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &807391233
@@ -8060,9 +8061,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1273800945}
-        m_TargetAssemblyTypeName: NotasManager, Assembly-CSharp
-        m_MethodName: Comprobar
+      - m_Target: {fileID: 807391236}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: CargarEscena
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8072,6 +8073,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &807391236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807391231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d71de274a67b11f489215aefde14a5e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escena: Final
 --- !u!1 &818336062
 GameObject:
   m_ObjectHideFlags: 0
@@ -10090,7 +10104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87b97d4df0753040892215acddf2a6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  comporbar: {fileID: 807391235}
+  comprobar: {fileID: 0}
   sceneFinal: Final
   barra1: {fileID: 1794048012}
   barra2: {fileID: 1082956441}

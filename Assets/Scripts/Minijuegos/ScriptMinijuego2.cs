@@ -87,6 +87,7 @@ public class ScriptMinijuego2 : MonoBehaviour
     {
         texto.text = "Muchas gracias, eso es todo lo que necesito.";
         tarea.Completar(puntosAcierto);
+        minijuego.SetActive(false);
     }
 
     public void Comprobar()

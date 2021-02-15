@@ -79,6 +79,7 @@ public class ScriptMinijuego1 : MonoBehaviour
         texto.text = "Muchas gracias, ese es justo el material que estaba buscando.";
         Debug.Log(puntosAcierto);
         tarea.Completar(puntosAcierto);
+        minijuego.SetActive(false);
     }
 
 
