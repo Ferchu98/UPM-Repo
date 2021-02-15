@@ -63,9 +63,12 @@
     <Compile Include="Assets\Scripts\Minijuegos\Profesor1.cs" />
     <Compile Include="Assets\Scripts\Minijuegos\Manager.cs" />
     <Compile Include="Assets\Scripts\Minijuegos\ProgressBar2.cs" />
-    <Compile Include="Assets\Scripts\Minijuegos\Boton.cs" />
     <Compile Include="Assets\Scripts\Movimiento\Camara.cs" />
+    <Compile Include="Assets\Scripts\Minijuegos\Boton.cs" />
+    <Compile Include="Assets\Scripts\Menu\Menu.cs" />
     <Compile Include="Assets\Scripts\Movimiento\BotonMovimiento.cs" />
+    <Compile Include="Assets\Scripts\Final\NotasManager.cs" />
+    <Compile Include="Assets\Scripts\Final\Final.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

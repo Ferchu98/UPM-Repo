@@ -7,6 +7,7 @@ TagManager:
   - Prof1
   - Prof2
   - Tarea1
+  - NotasManager
   layers:
   - Default
   - TransparentFX
