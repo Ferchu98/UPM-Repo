@@ -39,7 +39,7 @@ public class ProgressBar2 : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (slider.value < targetProgress)
         {
@@ -65,11 +65,11 @@ public class ProgressBar2 : MonoBehaviour
             Substract(0.1f);
         }
 
-        txt.text = (Mathf.Round(slider.value * 100)).ToString();
+        txt.text = (Mathf.Round(slider.value * 100)/10).ToString();
 
         if (slider.value >= 0.5 && !mitad)
         {
-            ps.Play();
+            //ps.Play();
             mitad = true;
         }
 
@@ -80,7 +80,7 @@ public class ProgressBar2 : MonoBehaviour
 
         if (slider.value >= 0.75 && !tresC)
         {
-            ps.Play();
+            //ps.Play();
             tresC = true;
         }
 
@@ -103,8 +103,6 @@ public class ProgressBar2 : MonoBehaviour
 
     IEnumerator MostrarTexto()
     {
-
-
         yield return new WaitForSeconds(1.0f);
     }
 }

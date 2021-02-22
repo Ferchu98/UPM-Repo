@@ -40,7 +40,7 @@ public class NotasManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (SceneManager.GetActiveScene().name == "Escena 1")
+        if (SceneManager.GetActiveScene().name == "Movimiento")
         {
             nota1 = Mathf.Round(barra1.value * 10);
             nota2 = Mathf.Round(barra2.value * 10);
@@ -65,7 +65,7 @@ public class NotasManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (SceneManager.GetActiveScene().name == "Escena 1")
+        if (SceneManager.GetActiveScene().name == "Movimiento")
         {
             barra1 = GameObject.FindWithTag("Prof1").gameObject.GetComponent<Slider>();
             barra2 = GameObject.FindWithTag("Prof2").gameObject.GetComponent<Slider>();

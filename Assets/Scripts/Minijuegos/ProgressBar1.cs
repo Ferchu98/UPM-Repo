@@ -39,7 +39,7 @@ public class ProgressBar1 : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (slider.value < targetProgress)
         {
@@ -63,11 +63,11 @@ public class ProgressBar1 : MonoBehaviour
         {
             Substract(0.1f);
         }
-        txt.text = (Mathf.Round(slider.value * 100)).ToString();
+        txt.text = (Mathf.Round(slider.value * 100)/10).ToString();
 
         if (slider.value >= 0.5 && !mitad)
         {
-            ps.Play();
+            //ps.Play();
             mitad = true;
         }
         
@@ -78,7 +78,7 @@ public class ProgressBar1 : MonoBehaviour
 
         if (slider.value >= 0.75 && !tresC)
         {
-            ps.Play();
+            //ps.Play();
             tresC = true;
         }
 

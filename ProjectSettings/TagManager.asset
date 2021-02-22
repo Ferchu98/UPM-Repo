@@ -9,6 +9,7 @@ TagManager:
   - Tarea1
   - NotasManager
   - Comprobar
+  - ManagerMinijuegos
   layers:
   - Default
   - TransparentFX
