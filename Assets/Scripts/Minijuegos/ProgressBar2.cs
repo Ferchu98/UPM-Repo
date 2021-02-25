@@ -9,7 +9,7 @@ public class ProgressBar2 : MonoBehaviour
     private Slider slider;
 
     public float fillSpeed = 0.5f;
-    private float targetProgress = 0;
+    public float targetProgress = 0;
 
     public GameObject texto;
     public Text txt;

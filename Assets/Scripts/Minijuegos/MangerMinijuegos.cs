@@ -48,8 +48,9 @@ public class MangerMinijuegos : MonoBehaviour
         {
             activeM1++;
             minijuegos1[activeM1].SetActive(true);
+            pb1.Increment(puntos / 100);
         }
-        pb1.Increment(puntos/100);
+        
     }
 
     public void CompletarM2(float puntos)
