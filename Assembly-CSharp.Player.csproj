@@ -73,6 +73,8 @@
     <Compile Include="Assets\Scripts\Minijuegos\MangerMinijuegos.cs" />
     <Compile Include="Assets\Scripts\Minijuegos\Minijuego1_1.cs" />
     <Compile Include="Assets\Scripts\Minijuegos\Minijuego1_2.cs" />
+    <Compile Include="Assets\Scripts\Minijuegos\Minijuego1_3.cs" />
+    <Compile Include="Assets\Scripts\Minijuegos\Minijuego1_4.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
