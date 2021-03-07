@@ -38,23 +38,14 @@ public class ProgressBar2 : MonoBehaviour
         //Increment(0.75f);
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        if (slider.value < targetProgress)
-        {
-            slider.value += fillSpeed * Time.deltaTime;
-        }
-        if (slider.value > targetProgress)
-        {
-            slider.value -= fillSpeed * Time.deltaTime;
-        }
 
+    private void Update()
+    {
         if (Input.GetKeyDown(KeyCode.Keypad5))
         {
             Increment(0.1f);
         }
-        
+
         if (Input.GetKeyDown(KeyCode.Keypad8))
         {
             Increment(0.05f);
@@ -64,6 +55,24 @@ public class ProgressBar2 : MonoBehaviour
         {
             Substract(0.1f);
         }
+
+        
+    }
+
+    private void LateUpdate()
+    {
+        if (slider.value < targetProgress)
+        {
+            slider.value += fillSpeed * Time.deltaTime;
+        }
+        if (slider.value > targetProgress)
+        {
+            slider.value -= fillSpeed * Time.deltaTime;
+        }
+    }
+    void FixedUpdate()
+    {
+        
 
         txt.text = (Mathf.Round(slider.value * 100)/10).ToString();
 
@@ -101,9 +110,5 @@ public class ProgressBar2 : MonoBehaviour
         targetProgress = slider.value - valorSub;
     }
 
-    IEnumerator MostrarTexto()
-    {
-        yield return new WaitForSeconds(1.0f);
-    }
 }
 

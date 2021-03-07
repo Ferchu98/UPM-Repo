@@ -44,11 +44,14 @@ public class MangerMinijuegos : MonoBehaviour
     public void CompletarM1(float puntos)
     {
         minijuegos1[activeM1].SetActive(false);
-        if (activeM1 < (minijuegos1.Length - 1))
+        if (activeM1 < (minijuegos1.Length))
         {
-            activeM1++;
-            minijuegos1[activeM1].SetActive(true);
             pb1.Increment(puntos / 100);
+            if (activeM1 < (minijuegos1.Length - 1))
+            {
+                activeM1++;
+                minijuegos1[activeM1].SetActive(true);
+            }
         }
         
     }
@@ -56,11 +59,14 @@ public class MangerMinijuegos : MonoBehaviour
     public void CompletarM2(float puntos)
     {
         minijuegos2[activeM2].SetActive(false);
-        if (activeM2 < (minijuegos2.Length - 1))
+        if (activeM2 < (minijuegos2.Length))
         {
-            activeM2++;
-            minijuegos2[activeM2].SetActive(true);
-            pb2.Increment(puntos/100);
+            pb2.Increment(puntos / 100);
+            if (activeM2 < (minijuegos2.Length - 1))
+            {
+                activeM2++;
+                minijuegos2[activeM2].SetActive(true);
+            }
         }
     }
 

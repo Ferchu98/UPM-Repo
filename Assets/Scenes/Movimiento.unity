@@ -1769,7 +1769,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -3479,7 +3479,7 @@ MonoBehaviour:
   barra2: {fileID: 0}
   minijuego: {fileID: 13346154}
   puzle: {fileID: 792333194}
-  puntosAcierto: 20
+  puntosAcierto: 30
   puntosFallo: 5
   texto: {fileID: 1633475246}
   textos:
@@ -4633,7 +4633,7 @@ MonoBehaviour:
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
+  m_DynamicPixelsPerUnit: 8
   m_PresetInfoIsWorld: 1
 --- !u!223 &469484904
 Canvas:
@@ -6659,7 +6659,7 @@ MonoBehaviour:
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
+  m_DynamicPixelsPerUnit: 8
   m_PresetInfoIsWorld: 1
 --- !u!223 &676988716
 Canvas:
@@ -9221,7 +9221,7 @@ MonoBehaviour:
   barra2: {fileID: 0}
   minijuego: {fileID: 569284995}
   puzle: {fileID: 1203848279}
-  puntosAcierto: 20
+  puntosAcierto: 30
   puntosFallo: 5
   texto: {fileID: 1379216964}
   textos:
@@ -9841,7 +9841,7 @@ MonoBehaviour:
   barra2: {fileID: 0}
   minijuego: {fileID: 806903593}
   puzle: {fileID: 354938974}
-  puntosAcierto: 20
+  puntosAcierto: 30
   puntosFallo: 5
   texto: {fileID: 1774303027}
   textos:
@@ -11027,7 +11027,7 @@ MonoBehaviour:
   barra2: {fileID: 0}
   minijuego: {fileID: 682667007}
   puzle: {fileID: 1990397700}
-  puntosAcierto: 20
+  puntosAcierto: 30
   puntosFallo: 5
   texto: {fileID: 1348513847}
   textos:
@@ -11125,7 +11125,7 @@ MonoBehaviour:
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
+  m_DynamicPixelsPerUnit: 8
   m_PresetInfoIsWorld: 1
 --- !u!223 &1190988088
 Canvas:
@@ -12919,7 +12919,7 @@ MonoBehaviour:
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
+  m_DynamicPixelsPerUnit: 8
   m_PresetInfoIsWorld: 1
 --- !u!223 &1354215878
 Canvas:
@@ -16283,7 +16283,7 @@ MonoBehaviour:
   barra2: {fileID: 0}
   minijuego: {fileID: 1496951979}
   puzle: {fileID: 2133809247}
-  puntosAcierto: 20
+  puntosAcierto: 30
   puntosFallo: 5
   texto: {fileID: 220550025}
   textos:
@@ -17356,7 +17356,7 @@ MonoBehaviour:
   barra2: {fileID: 0}
   minijuego: {fileID: 697529218}
   puzle: {fileID: 942918789}
-  puntosAcierto: 20
+  puntosAcierto: 30
   puntosFallo: 5
   texto: {fileID: 1626256494}
   textos:
@@ -17498,7 +17498,7 @@ MonoBehaviour:
   barra2: {fileID: 0}
   minijuego: {fileID: 720064151}
   puzle: {fileID: 797499379}
-  puntosAcierto: 15
+  puntosAcierto: 25
   puntosFallo: 5
   texto: {fileID: 1269731457}
   textos:
@@ -18559,7 +18559,7 @@ MonoBehaviour:
   barra2: {fileID: 0}
   minijuego: {fileID: 1668664971}
   puzle: {fileID: 1629001442}
-  puntosAcierto: 20
+  puntosAcierto: 25
   puntosFallo: 5
   texto: {fileID: 356796239}
   textos:
