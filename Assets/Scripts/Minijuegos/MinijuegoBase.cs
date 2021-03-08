@@ -20,6 +20,11 @@ public class MinijuegoBase : MonoBehaviour
     public float puntosAcierto;
     public float puntosFallo;
 
+    public AudioClip sonidoAcierto;
+    public AudioClip sonidoFallo;
+
+    public AudioSource aS;
+
     public Text texto;
 
     public string[] textos;
@@ -41,6 +46,7 @@ public class MinijuegoBase : MonoBehaviour
         mM = GameObject.FindWithTag("ManagerMinijuegos").GetComponent<MangerMinijuegos>();
         barra1 = GameObject.FindWithTag("Prof1");
         barra2 = GameObject.FindWithTag("Prof2");
+        aS = this.gameObject.GetComponent<AudioSource>();
     }
 
     void Update()

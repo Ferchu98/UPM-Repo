@@ -8,6 +8,7 @@ public class Minijuego2_4 : MinijuegoBase
     {
         texto.text = fraseFallo;
         barra2.GetComponent<ProgressBar2>().Substract(puntosFallo / 100);
+        aS.PlayOneShot(sonidoFallo);
     }
 
     public void Acierto()
@@ -18,6 +19,7 @@ public class Minijuego2_4 : MinijuegoBase
     IEnumerator Completar()
     {
         texto.text = fraseAcierto;
+        aS.PlayOneShot(sonidoAcierto);
         yield return new WaitForSeconds(1f);
         mM.CompletarM2(puntosAcierto);
         minijuego.SetActive(false);

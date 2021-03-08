@@ -11,12 +11,18 @@ public class Menu : MonoBehaviour
 
     public void CargarEscena()
     {
-        SceneManager.LoadScene(escena);
+        StartCoroutine(Load());
     }
 
     public void Quit()
     {
         Application.Quit();
+    }
+
+    IEnumerator Load()
+    {
+        yield return new WaitForSeconds(0.8f);
+        SceneManager.LoadScene(escena);
     }
 
 }

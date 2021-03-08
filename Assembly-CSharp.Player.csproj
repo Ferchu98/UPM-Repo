@@ -60,25 +60,26 @@
     <Compile Include="Assets\Scripts\Minijuegos\ProgressBar1.cs" />
     <Compile Include="Assets\Scripts\Minijuegos\Deprecated\ScriptMinijuego1.cs" />
     <Compile Include="Assets\Scripts\Final\NotasManager.cs" />
+    <Compile Include="Assets\Scripts\Minijuegos\Minijuego1_2.cs" />
+    <Compile Include="Assets\Scripts\Minijuegos\Minijuego1_1.cs" />
+    <Compile Include="Assets\Scripts\Minijuegos\Minijuego2_1.cs" />
+    <Compile Include="Assets\Scripts\Minijuegos\Minijuego1_4.cs" />
     <Compile Include="Assets\Scripts\Minijuegos\Deprecated\Tarea1_1.cs" />
     <Compile Include="Assets\Scripts\Minijuegos\Deprecated\Profesor1.cs" />
     <Compile Include="Assets\Scripts\Minijuegos\Deprecated\Manager.cs" />
     <Compile Include="Assets\Scripts\Final\Final.cs" />
     <Compile Include="Assets\Scripts\Minijuegos\ProgressBar2.cs" />
+    <Compile Include="Assets\Scripts\Minijuegos\Minijuego2_2.cs" />
     <Compile Include="Assets\Scripts\Minijuegos\MinijuegoBase.cs" />
     <Compile Include="Assets\Scripts\Movimiento\Camara.cs" />
-    <Compile Include="Assets\Scripts\Minijuegos\BotonDesaparecer.cs" />
+    <Compile Include="Assets\Scripts\Minijuegos\Minijuego2_4.cs" />
+    <Compile Include="Assets\Scripts\Botones\BotonDesaparecer.cs" />
     <Compile Include="Assets\Scripts\Menu\Menu.cs" />
     <Compile Include="Assets\Scripts\Movimiento\BotonMovimiento.cs" />
-    <Compile Include="Assets\Scripts\Minijuegos\MangerMinijuegos.cs" />
-    <Compile Include="Assets\Scripts\Minijuegos\Minijuego1_1.cs" />
-    <Compile Include="Assets\Scripts\Minijuegos\Minijuego1_2.cs" />
     <Compile Include="Assets\Scripts\Minijuegos\Minijuego1_3.cs" />
-    <Compile Include="Assets\Scripts\Minijuegos\Minijuego1_4.cs" />
-    <Compile Include="Assets\Scripts\Minijuegos\Minijuego2_1.cs" />
-    <Compile Include="Assets\Scripts\Minijuegos\Minijuego2_2.cs" />
     <Compile Include="Assets\Scripts\Minijuegos\Minijuego2_3.cs" />
-    <Compile Include="Assets\Scripts\Minijuegos\Minijuego2_4.cs" />
+    <Compile Include="Assets\Scripts\Minijuegos\MangerMinijuegos.cs" />
+    <Compile Include="Assets\Scripts\Botones\SonidoBoton.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

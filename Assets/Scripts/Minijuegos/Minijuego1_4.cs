@@ -25,6 +25,7 @@ public class Minijuego1_4 : MinijuegoBase
     IEnumerator Completar()
     {
         texto.text = fraseAcierto;
+        aS.PlayOneShot(sonidoAcierto);
         yield return new WaitForSeconds(1f);
         mM.CompletarM1(puntosAcierto);
         minijuego.SetActive(false);
@@ -34,5 +35,6 @@ public class Minijuego1_4 : MinijuegoBase
     {
         texto.text = fraseFallo;
         barra1.GetComponent<ProgressBar1>().Substract(puntosFallo / 100);
+        aS.PlayOneShot(sonidoFallo);
     }
 }
